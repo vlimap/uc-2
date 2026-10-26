@@ -1,0 +1,59 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 30px;
+  background-color: lightgray;
+}
+
+h3 {
+  text-align: center;
+}
+
+.lista-pontos {
+  display: flex;
+  margin-top: 30px;
+}
+
+.ponto {
+  background-color: white;
+  width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 5px;
+  text-align: center;
+  align-content: end;
+}
+
+.ponto h3 {
+  text-align: center;
+
+}
+
+.ponto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ponto p {
+  text-align: justify;
+}
+
+.ponto button {
+  background-color: lightblue;
+  color: black;
+  padding: 10px;
+  text-align: right;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  align-content: end;
+}
+a {
+  text-decoration: none;
+  color: rgb(6, 7, 8);
+  font-weight: bold;
+}
+.ponto button:hover {
+  background-color: skyblue;
+}
