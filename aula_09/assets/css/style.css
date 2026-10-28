@@ -1,0 +1,68 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  background-color: #e773a4;
+}
+
+.lista-musicas {
+  display: flex;
+}
+
+h3 {
+  color: #131313;
+}
+
+.musica {
+  width: 300px;
+  border-radius: 10px;
+  background-color: #fefefe;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+
+.musica h4 {
+  color: #e4b9b9;
+}
+
+.musica img {
+  width: 100%;
+  border-radius: 5px;
+}
+.musica h5 {
+  color: #e4b9b9;
+}
+.musica h6 {
+  color: #e4b9b9;
+}
+
+.topo-card-musica {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+}
+
+.topo-card-musica i {
+  color: #e4b9b9;
+}
+
+.rodape-card-musica {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+.rodape-card-musica i{
+    font-size: 25px;
+    color: #E773A4;
+    cursor: pointer;
+}
+
+.controle-musica{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #e773a4;
+}
