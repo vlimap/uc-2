@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #080808;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 5%;
+  background: #e4f2fa;
+}
+
+.logo {
+  display: block;
+  width: 120px;
+  height: 65px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a,
+.sobre a {
+  display: inline-block;
+  padding: 9px 16px;
+  border-radius: 5px;
+  background: #005594;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover,
+.sobre a:hover {
+  background: #0874b9;
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+a:focus-visible {
+  outline: 3px solid #f7941d;
+  outline-offset: 3px;
+}
+
+main {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+}
+
+.apresentacao {
+  padding: 50px 0 42px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+}
+
+.apresentacao p {
+  margin: 0;
+  color: #d3d3d3;
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-size: 1.5rem;
+}
+
+.lista-cursos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.curso {
+  overflow: hidden;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #151515;
+}
+
+.curso img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 682 / 434;
+  object-fit: cover;
+}
+
+.curso-conteudo {
+  padding: 20px;
+}
+
+.categoria {
+  margin: 0 0 4px;
+  color: #a8c9e2;
+  font-size: 0.85rem;
+}
+
+.curso h3 {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+}
+
+.curso-conteudo > p:not(.categoria) {
+  margin: 0;
+  color: #ddd;
+}
+
+.detalhes {
+  display: flex;
+  gap: 30px;
+  margin: 18px 0 0;
+}
+
+.detalhes dt {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+.detalhes dd {
+  margin: 0;
+  font-weight: bold;
+}
+
+.sobre {
+  padding: 55px 0;
+}
+
+.sobre h2 {
+  margin-bottom: 10px;
+}
+
+.sobre p {
+  margin: 0 0 18px;
+  color: #ddd;
+}
+
+footer {
+  padding: 22px;
+  background: #005594;
+  text-align: center;
+}
+
+footer p {
+  margin: 3px 0;
+}
+
+@media (max-width: 760px) {
+  .lista-cursos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .cabecalho {
+    flex-direction: column;
+  }
+
+  .lista-cursos {
+    grid-template-columns: 1fr;
+  }
+}
