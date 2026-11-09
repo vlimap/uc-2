@@ -1,0 +1,12 @@
+{
+  "name": "aula_12",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Valtemir Lima",
+  "license": "ISC",
+  "description": "Aula 12 - Iniciando com JS!"
+}
